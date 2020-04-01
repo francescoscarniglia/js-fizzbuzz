@@ -1,19 +1,19 @@
 console.log('js ok');
 // Scrivi un programma che stampi i numeri da 1 a 100, ma:
 
-var numStamp = Math.floor(Math.random() *100) +1;
-// console.log(numStamp);
 
 // per i multipli di 3 stampi “Fizz” al posto del numero
 
-for(var i = 0; i < 100; i++) {
-    if(numStamp % 3) {
-      console.log('Fizzi');
-    } else if(numStamp % 5) {
-      console.log('Buzz');
-    } else {
-      console.log('FizzBuzz');
-    }
+for(var i = 1; i <= 100; i++) {
+  if(i % 3 === 0 && i % 5 === 0) {
+    console.log('FizzBuzz');
+  } else  if(i % 3 == 0) {
+     console.log('Fizzi');
+   } else if(i % 5 == 0) {
+     console.log('Buzz');
+   } else {
+     console.log(i);
+   }
 }
 
 // per i multipli di 5 stampi Buzz.
